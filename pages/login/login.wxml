@@ -1,0 +1,36 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <view class="itemsrc">
+      <image src = "/image/symbol.jpg" class = "img1" mode="aspectFit"/>
+    </view>
+
+    <view class="item">
+      <view class="login-item">
+         <view class = "login-item-info">
+           <view>用户名:</view>
+           <view class = "login-input"><input bindinput = "usernameInput" placeholder="请输入用户名" /></view>
+         </view>
+
+      </view>
+      <view class="login-item-pw"> 
+             <view class = "login-item-pwd">
+                 密 码:
+             </view>
+            <view class = "login-pwd">
+                <input style="flex-grow:1" password="true" bindinput = "passwordInput"  placeholder="请输入密码"/>
+            </view>
+      </view>
+      <text> 忘记密码 </text>
+    <view class = "login-item bottom">
+       <button class = "login-btn" bindtap = "loginBtnClick">登录</button>
+    </view>
+   </view>
+
+   <view class = "item bottom-info">
+       <view>没有账户? <text> 注册 </text> </view>
+   </view>
+</view>
+
+
+    
+
